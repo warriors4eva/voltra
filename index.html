@@ -8,374 +8,76 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-9VV9HZ3JTH');
+
+    // 🔥 Conversion tracking function
+    function trackVoltraClick(location) {
+      gtag('event', 'click_voltra', {
+        event_category: 'conversion',
+        event_label: location,
+        value: 1
+      });
+    }
   </script>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <title>Beyond Power VOLTRA I Guide | Is It Worth It? </title>
-  <meta
-    name="description"
-    content="A practical guide to the Beyond Power VOLTRA I: what it is, who it is for, key pros and cons, and whether it makes sense for a compact home gym."
-  />
-  <meta
-    name="keywords"
-    content="Beyond Power VOLTRA I, VOLTRA I review, VOLTRA I worth it, portable cable machine, smart cable trainer, compact home gym, VOLTRA vs cable machine"
-  />
+  <title>Beyond Power VOLTRA I Guide | Is It Worth It?</title>
+  <meta name="description" content="A practical guide to the Beyond Power VOLTRA I: what it is, who it is for, key pros and cons, and whether it makes sense for a compact home gym." />
+  <meta name="keywords" content="Beyond Power VOLTRA I, VOLTRA I review, VOLTRA I worth it, portable cable machine, smart cable trainer, compact home gym, VOLTRA vs cable machine" />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://warriors4eva.github.io/voltra/" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Beyond Power VOLTRA I Guide | Is It Worth It?" />
-  <meta
-    property="og:description"
-    content="A practical guide to the Beyond Power VOLTRA I, including pros, cons, use cases, and whether it fits your home gym."
-  />
-  <meta property="og:url" content="https://warriors4eva.github.io/voltra/" />
-  <meta property="og:site_name" content="VOLTRA Guide" />
-
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Beyond Power VOLTRA I Guide | Is It Worth It?" />
-  <meta
-    name="twitter:description"
-    content="Pros, cons, use cases, and what to know before buying the Beyond Power VOLTRA I."
-  />
-
   <style>
-    :root {
-      --bg: #0b0d10;
-      --panel: #12161b;
-      --panel-2: #171c22;
-      --text: #f5f7fa;
-      --muted: #b7c0cb;
-      --line: #26303a;
-      --accent: #7dd3fc;
-      --accent-2: #22c55e;
-      --max: 1100px;
-      --radius: 18px;
-      --shadow: 0 18px 50px rgba(0,0,0,.28);
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, Helvetica, Arial, sans-serif;
-      background:
-        radial-gradient(circle at top, rgba(125,211,252,.10), transparent 30%),
-        linear-gradient(180deg, #090b0e, #0f1318 35%, #0b0d10 100%);
-      color: var(--text);
-      line-height: 1.65;
-    }
-
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-
-    .wrap {
-      width: min(var(--max), calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 20;
-      backdrop-filter: blur(10px);
-      background: rgba(11, 13, 16, .72);
-      border-bottom: 1px solid rgba(255,255,255,.06);
-    }
-
-    .topbar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 14px 0;
-    }
-
-    .brand {
-      font-weight: 800;
-      letter-spacing: .02em;
-      color: var(--text);
-    }
-
-    .nav {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .nav a {
-      color: var(--muted);
-      font-size: 14px;
-    }
-
+    body { margin:0; font-family: -apple-system, sans-serif; background:#0b0d10; color:white; }
+    .wrap { max-width:900px; margin:auto; padding:40px 20px; }
+    h1 { font-size:40px; }
     .button {
-      display: inline-block;
-      border: 1px solid rgba(125,211,252,.35);
-      background: linear-gradient(180deg, rgba(125,211,252,.18), rgba(125,211,252,.10));
-      color: white;
-      padding: 12px 18px;
-      border-radius: 999px;
-      font-weight: 700;
-      box-shadow: var(--shadow);
-    }
-
-    .button:hover { text-decoration: none; transform: translateY(-1px); }
-    .button.secondary {
-      background: transparent;
-      border-color: rgba(255,255,255,.12);
-      color: var(--text);
-      box-shadow: none;
-    }
-
-    .hero {
-      padding: 72px 0 36px;
-    }
-
-    .eyebrow {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(125,211,252,.08);
-      border: 1px solid rgba(125,211,252,.18);
-      padding: 7px 10px;
-      border-radius: 999px;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      font-size: clamp(34px, 5vw, 60px);
-      line-height: 1.04;
-      margin: 0 0 16px;
-      letter-spacing: -.03em;
-    }
-
-    .hero p {
-      font-size: clamp(18px, 2vw, 21px);
-      color: var(--muted);
-      max-width: 760px;
-      margin: 0 0 28px;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 18px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin: 34px 0 0;
-    }
-
-    .card {
-      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--radius);
-      padding: 22px;
-      box-shadow: var(--shadow);
-    }
-
-    .card h3 {
-      margin: 0 0 10px;
-      font-size: 18px;
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .section {
-      padding: 28px 0;
-    }
-
-    .section h2 {
-      font-size: clamp(28px, 3vw, 38px);
-      line-height: 1.12;
-      margin: 0 0 14px;
-      letter-spacing: -.02em;
-    }
-
-    .section p.lead {
-      color: var(--muted);
-      margin-top: 0;
-      max-width: 780px;
-    }
-
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 22px;
-    }
-
-    .list {
-      padding-left: 20px;
-      margin: 14px 0 0;
-    }
-
-    .list li {
-      margin: 0 0 10px;
-      color: var(--muted);
-    }
-
-    .compare {
-      overflow-x: auto;
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.02);
-      box-shadow: var(--shadow);
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      min-width: 700px;
-    }
-
-    th, td {
-      padding: 16px;
-      border-bottom: 1px solid var(--line);
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      font-size: 14px;
-      color: #dce6f2;
-      background: rgba(255,255,255,.03);
-    }
-
-    td {
-      color: var(--muted);
-      font-size: 15px;
-    }
-
-    .proscons {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-    }
-
-    .panel {
-      background: var(--panel);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: var(--radius);
-      padding: 22px;
-      box-shadow: var(--shadow);
-    }
-
-    .panel.good h3 { color: #9ae6b4; }
-    .panel.bad h3 { color: #fca5a5; }
-
-    .cta {
-      margin: 28px 0 0;
-      padding: 28px;
-      border-radius: 24px;
-      background: linear-gradient(180deg, rgba(34,197,94,.10), rgba(125,211,252,.08));
-      border: 1px solid rgba(255,255,255,.10);
-      box-shadow: var(--shadow);
-    }
-
-    .cta h3 {
-      margin: 0 0 10px;
-      font-size: 28px;
-    }
-
-    .cta p {
-      margin: 0 0 18px;
-      color: var(--muted);
-    }
-
-    .small {
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .faq {
-      display: grid;
-      gap: 14px;
-    }
-
-    details {
-      background: var(--panel);
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 14px;
-      padding: 16px 18px;
-    }
-
-    summary {
-      cursor: pointer;
-      font-weight: 700;
-    }
-
-    details p {
-      margin: 12px 0 0;
-      color: var(--muted);
-    }
-
-    footer {
-      padding: 38px 0 54px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .disclosure {
-      margin-top: 14px;
-      padding: 16px 18px;
-      border-radius: 14px;
-      background: rgba(255,255,255,.03);
-      border: 1px solid rgba(255,255,255,.08);
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    @media (max-width: 900px) {
-      .cards,
-      .grid-2,
-      .proscons {
-        grid-template-columns: 1fr;
-      }
-
-      .topbar-inner {
-        align-items: flex-start;
-        flex-direction: column;
-      }
+      display:inline-block;
+      padding:14px 20px;
+      background:#22c55e;
+      color:white;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:bold;
+      margin-top:20px;
     }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Beyond Power VOLTRA I Guide: Is It Worth It?",
-    "description": "A practical guide to the Beyond Power VOLTRA I covering use cases, pros, cons, and whether it fits a compact home gym.",
-    "author": {
-      "@type": "Person",
-      "name": "Independent Publisher"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://warriors4eva.github.io/voltra/"
-    },
-    "about": {
-      "@type": "Product",
-      "name": "Beyond Power VOLTRA I",
-      "brand": {
-        "@type": "Brand",
-        "name": "Beyond Power"
-      }
-    }
-  }
-  </script>
 </head>
+
 <body>
+  <div class="wrap">
+    <h1>Beyond Power VOLTRA I: Is It Worth It?</h1>
+
+    <p>
+      The VOLTRA I is a portable smart cable trainer designed for compact home gyms.
+    </p>
+
+    <!-- 🔥 HERO BUTTON (tracked) -->
+    <a 
+      class="button"
+      href="https://www.beyond-power.com/?referral_code=B1RXmlAyIelRML5Zy"
+      target="_blank"
+      rel="nofollow sponsored"
+      onclick="trackVoltraClick('hero')"
+    >
+      Check Current VOLTRA Offer
+    </a>
+
+    <p style="margin-top:40px;">
+      This guide breaks down whether the VOLTRA is worth it based on space, budget, and training goals.
+    </p>
+
+    <!-- 🔥 SECOND CTA (tracked separately) -->
+    <a 
+      class="button"
+      href="https://www.beyond-power.com/?referral_code=B1RXmlAyIelRML5Zy"
+      target="_blank"
+      rel="nofollow sponsored"
+      onclick="trackVoltraClick('bottom')"
+    >
+      View VOLTRA Details
+    </a>
+  </div>
+</body>
+</html>
